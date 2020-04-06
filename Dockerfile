@@ -24,6 +24,7 @@ RUN apt-get update &&\
     psmisc \
     libapparmor1 \
     libgmp3-dev \
+    libxml2-dev \
     libclang-dev &&\
   locale-gen en_US.UTF-8 &&\
   apt-get clean &&\

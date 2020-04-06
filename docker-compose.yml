@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    rstudio:
+        image: okamumu/rstudio-server-base
+        restart: always
+        ports:
+            - "59513:8787"
+        volumes:
+            - "myrstudio:/home/rstudio"
+        environment:
+            - RS_USER=username
+            - RS_UID=1000
+            - RS_PASSWORD=userpassword
+            - RS_GID=10000
+            - RS_HOME=/home/rstudio
+volumes:
+  myrstudio:

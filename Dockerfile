@@ -23,6 +23,7 @@ RUN apt-get update &&\
     libopenblas-dev \
     psmisc \
     libapparmor1 \
+    libgmp3-dev \
     libclang-dev &&\
   locale-gen en_US.UTF-8 &&\
   apt-get clean &&\
